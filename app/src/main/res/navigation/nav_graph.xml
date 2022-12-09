@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/pubList_fragment"
+        android:name="com.example.zadaniemobv.fragments.PubList_fragment"
+        android:label="Zoznam podnikov"
+        tools:layout="@layout/pub_list" >
+        <action
+            android:id="@+id/action_pubList_fragment_to_show_Pub"
+            app:destination="@id/show_Pub" />
+        <action
+            android:id="@+id/action_pubList_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_pubList_fragment_to_friendList_fragment"
+            app:destination="@id/friendList_fragment" />
+        <action
+            android:id="@+id/action_pubList_fragment_to_nearbyPubsList_fragment"
+            app:destination="@id/nearbyPubsList_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/show_Pub"
+        android:name="com.example.zadaniemobv.fragments.Show_Pub"
+        android:label="Bližšie informácie o podniku"
+        tools:layout="@layout/show_pub" >
+        <action
+            android:id="@+id/action_show_Pub_to_pubList_fragment"
+            app:destination="@id/pubList_fragment" />
+        <argument
+            android:name="pub_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_show_Pub_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="com.example.zadaniemobv.fragments.Registration_fragment"
+        android:label="Registrácia používateľa"
+        tools:layout="@layout/registration" >
+        <action
+            android:id="@+id/action_registration_fragment_to_pubList_fragment"
+            app:destination="@id/pubList_fragment" />
+        <action
+            android:id="@+id/action_registration_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.zadaniemobv.fragments.Login_fragment"
+        android:label="Prihlásenie používateľa"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_fragment_to_registration_fragment"
+            app:destination="@id/registration_fragment" />
+        <action
+            android:id="@+id/action_login_fragment_to_pubList_fragment"
+            app:destination="@id/pubList_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendList_fragment"
+        android:name="com.example.zadaniemobv.fragments.FriendList_fragment"
+        android:label="Zoznam kamarátov" >
+        <action
+            android:id="@+id/action_friendList_fragment_to_show_Pub"
+            app:destination="@id/show_Pub" />
+        <action
+            android:id="@+id/action_friendList_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_friendList_fragment_to_addFriend_fragment"
+            app:destination="@id/addFriend_fragment" />
+        <action
+            android:id="@+id/action_friendList_fragment_to_deleteFriend_fragment"
+            app:destination="@id/deleteFriend_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriend_fragment"
+        android:name="com.example.zadaniemobv.fragments.AddFriend_fragment"
+        android:label="Pridanie kamaráta" >
+        <action
+            android:id="@+id/action_addFriend_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_addFriend_fragment_to_friendList_fragment"
+            app:destination="@id/friendList_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteFriend_fragment"
+        android:name="com.example.zadaniemobv.fragments.DeleteFriend_fragment"
+        android:label="Vymazanie kamaráta" >
+        <action
+            android:id="@+id/action_deleteFriend_fragment_to_friendList_fragment"
+            app:destination="@id/friendList_fragment" />
+        <action
+            android:id="@+id/action_deleteFriend_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nearbyPubsList_fragment"
+        android:name="com.example.zadaniemobv.fragments.NearbyPubsList_fragment"
+        android:label="Zoznam podnikov v okolí" >
+        <action
+            android:id="@+id/action_nearbyPubsList_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_nearbyPubsList_fragment_to_pubList_fragment"
+            app:destination="@id/pubList_fragment" />
+    </fragment>
+</navigation>

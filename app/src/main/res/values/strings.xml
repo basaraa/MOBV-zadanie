@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ZadanieMOBV</string>
+    <string name="show_map">Ukázať na mape</string>
+    <string name="name">Zadajte svoje meno</string>
+    <string name="pub_name">Zadajte meno podniku</string>
+    <string name="lat">Zadajte zemepisnú šírku</string>
+    <string name="lon">Zadajte zemepisnú dĺžku</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit_info">Potvrdiť údaje</string>
+    <string name="info_add">Zadajte informácie o podniku:</string>
+    <string name="meno">Zadane meno</string>
+    <string name="podnik">Meno podniku</string>
+    <string name="enter_pub">Prejsť na hľadanie podniku</string>
+    <string name="back_to_pub">Späť na zoznam podnikov</string>
+    <string name="item_name">meno_podniku</string>
+    <string name="opening_hours">Otváracie hodiny</string>
+    <string name="opening_hours_placeholder">Otváracie hodiny podniku:</string>
+    <string name="phone">Telefónne číslo</string>
+    <string name="website">Webová stránka</string>
+    <string name="nickname">Zadaj prihlasovacie meno</string>
+    <string name="heslo">Zadaj heslo</string>
+    <string name="heslo_znova">Zadaj znova heslo</string>
+    <string name="prihlasenie">Prihlásenie</string>
+    <string name="registracia">Registrácia</string>
+    <string name="item_users">počet_používateľov</string>
+    <string name="logout">Odhlásiť sa</string>
+    <string name="friend_name">meno_kamaráta</string>
+    <string name="item_bar_name">názov_podniku</string>
+    <string name="friend_list">Zoznam kamarátov</string>
+    <string name="enter_friend_name">Zadaj meno kamaráta</string>
+    <string name="submit_friend">Potvrdiť údaj</string>
+    <string name="distance">vzdialenosť</string>
+    <string name="here">Označiť</string>
+</resources>
